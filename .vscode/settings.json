@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^php -v; if \\(\\$LASTEXITCODE -eq 0\\) \\{ Get-ChildItem -File -Filter \\*\\.php \\| ForEach-Object \\{ php -l \\$_\\.FullName \\} \\}$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

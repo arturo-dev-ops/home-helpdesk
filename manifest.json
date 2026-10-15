@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Incidencias Casa",
+  "short_name": "Incidencias",
+  "description": "Gestiona las incidencias y tareas pendientes de casa.",
+  "lang": "es",
+  "start_url": "./login.php",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f8",
+  "theme_color": "#155eef",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

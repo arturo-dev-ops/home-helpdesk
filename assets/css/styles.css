@@ -1,0 +1,235 @@
+:root {
+    color-scheme: light;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #17212b;
+    background: #f3f6f8;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+}
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.auth-page {
+    max-width: 440px;
+    padding-top: 8vh;
+}
+
+.auth-panel {
+    padding: 32px;
+}
+
+.auth-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.logout-form {
+    margin-top: 12px;
+    text-align: right;
+}
+
+.button-secondary {
+    border-color: #bdc9d3;
+    background: #fff;
+    color: #17212b;
+}
+
+.button-secondary:hover {
+    background: #f3f6f8;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #526171;
+}
+
+.panel {
+    margin-top: 24px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dbe3e9;
+    border-radius: 12px;
+}
+
+.status-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px;
+}
+
+.status-menu a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #dbe3e9;
+    border-radius: 999px;
+    background: #fff;
+    color: #344454;
+    text-decoration: none;
+}
+
+.status-menu a:hover {
+    border-color: #155eef;
+    color: #155eef;
+}
+
+.status-menu a.active {
+    border-color: #155eef;
+    background: #155eef;
+    color: #fff;
+}
+
+.status-menu span {
+    font-size: .85em;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) minmax(220px, 2fr) auto;
+    gap: 12px;
+    align-items: end;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input,
+select,
+button {
+    box-sizing: border-box;
+    min-height: 42px;
+    padding: 8px 10px;
+    border: 1px solid #bdc9d3;
+    border-radius: 7px;
+    font: inherit;
+}
+
+input,
+select {
+    width: 100%;
+    background: #fff;
+}
+
+button {
+    border-color: #155eef;
+    background: #155eef;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104dcc;
+}
+
+.notice {
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 7px;
+}
+
+.notice.error {
+    background: #fff1f0;
+    color: #9f1d16;
+}
+
+.notice.success {
+    background: #eaf8ef;
+    color: #176b35;
+}
+
+.empty {
+    padding: 18px;
+    background: #f7f9fb;
+    border-radius: 7px;
+    color: #526171;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e1e7ec;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    color: #526171;
+    font-size: .9rem;
+}
+
+td form {
+    display: flex;
+    gap: 8px;
+    min-width: 230px;
+}
+
+.delete-form {
+    margin-top: 8px;
+}
+
+td form select {
+    min-width: 130px;
+}
+
+td form button {
+    white-space: nowrap;
+}
+
+.button-danger {
+    border-color: #b42318;
+    background: #b42318;
+}
+
+.button-danger:hover {
+    background: #912018;
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .panel {
+        padding: 18px 14px;
+    }
+
+    .auth-panel {
+        padding: 24px 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
